@@ -3,6 +3,7 @@ import {
 } from "react-router-dom";
 import MainLayout from "../MainLayout/MainLayout";
 import Home from "../pages/Home/Home/Home";
+import Dashboard from "../pages/Dashboard/Dashboard/Dashboard";
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,13 @@ const router = createBrowserRouter([
             }
         ]
     },
+    {
+        path : '/dashboard',
+        element: <Dashboard></Dashboard>,
+        children: [
+            
+        ]
+    }
 ]);
 
 export default router;

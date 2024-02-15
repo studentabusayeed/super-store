@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import EmployeeDashboard from '../EmployeeDashboard/EmployeeDashbaord';
-import AdminDashboard from '../AdminDashboard/AdminDashboard';
+import EmployeeDashboard from '../EmployeeDashboard/EmployeeDashboard/EmployeeDashbaord';
+import AdminDashboard from '../AdminDashboard/AdminDashboard/AdminDashboard';
 
 const Dashboard = () => {
     const employee = true;

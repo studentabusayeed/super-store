@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+<<<<<<< HEAD
+.supershop-container {
+    @apply max-w-[1280px] w-full mx-auto py-10 md:py-12 lg:py-20 px-3;
+=======
 
 
 
@@ -22,4 +26,5 @@
 ::-webkit-scrollbar-thumb {
     background: #33c682;
     border-radius: 10px;
+>>>>>>> 2a9b85a285aa31afdc2bf909b04caf88dd742c9a
 }

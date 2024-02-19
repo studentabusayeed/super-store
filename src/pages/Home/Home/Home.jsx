@@ -1,8 +1,10 @@
 import React from 'react';
+import Welcome from '../../Waiting Employee/Home/Welcome';
 
 const Home = () => {
     return (
-        <div>
+        <div className=''>
+            <Welcome />
         </div>
     );
 };

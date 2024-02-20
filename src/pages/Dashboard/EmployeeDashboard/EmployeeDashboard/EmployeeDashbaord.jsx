@@ -3,6 +3,8 @@ import { AiFillFacebook, AiFillInstagram, AiOutlineHome, AiOutlineSchedule, AiOu
 import { FaUserClock } from 'react-icons/fa';
 import { FaBarsStaggered, FaXmark } from 'react-icons/fa6';
 import Navbar from '../../../../shared/Navbar/Navbar';
+import { MdProductionQuantityLimits } from 'react-icons/md';
+import { IoBagAddOutline } from 'react-icons/io5';
 
 const EmployeeDashboard = ({ isSideMenuOpen, toggleSideMenu }) => {
     
@@ -26,7 +28,7 @@ const EmployeeDashboard = ({ isSideMenuOpen, toggleSideMenu }) => {
                 }
                 to="addProduct"
             >
-                <AiOutlineSchedule />
+                <IoBagAddOutline />
                 <span className="ml-4">Add Product</span>
             </NavLink>
         </li>
@@ -37,7 +39,7 @@ const EmployeeDashboard = ({ isSideMenuOpen, toggleSideMenu }) => {
                 }
                 to="productList"
             >
-                <FaUserClock />
+                <MdProductionQuantityLimits />
                 <span className="ml-4">Product List</span>
             </NavLink>
         </li>
@@ -49,7 +51,7 @@ const EmployeeDashboard = ({ isSideMenuOpen, toggleSideMenu }) => {
                 }
                 to="soldProduct"
             >
-                <AiOutlineHome />
+                <IoBagAddOutline />
                 <span className="ml-4">Sold Product</span>
             </NavLink>
         </li>
@@ -58,9 +60,9 @@ const EmployeeDashboard = ({ isSideMenuOpen, toggleSideMenu }) => {
                 className={({ isActive }) =>
                     isActive ? "inline-flex items-center font-bold text-[#3d48df] hover:text-blue-600 text-lg" : "inline-flex items-center font-semibold hover:text-blue-600 text-lg"
                 }
-                to="orderedList"
+                to="soldList"
             >
-                <AiOutlineHome />
+                <MdProductionQuantityLimits />
                 <span className="ml-4">Sold List</span>
             </NavLink>
         </li>

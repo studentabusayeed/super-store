@@ -3,7 +3,7 @@ import EmployeeDashboard from '../EmployeeDashboard/EmployeeDashboard/EmployeeDa
 import AdminDashboard from '../AdminDashboard/AdminDashboard/AdminDashboard';
 
 const Dashboard = () => {
-    const employee = true;
+    const employee = false;
     const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
     const toggleSideMenu = () => {
         setIsSideMenuOpen(!isSideMenuOpen);

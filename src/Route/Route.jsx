@@ -8,6 +8,11 @@ import AddProduct from "../pages/Dashboard/EmployeeDashboard/AddProduct/AddProdu
 import SoldProduct from "../pages/Dashboard/EmployeeDashboard/SoldProduct/SoldProduct";
 import EmployeeHome from "../pages/Dashboard/EmployeeDashboard/EmployeeHome/EmployeeHome";
 import ProductList from "../pages/Dashboard/EmployeeDashboard/ProductList/ProductList";
+import SoldList from "../pages/Dashboard/EmployeeDashboard/SoldList/SoldList";
+import AdminHome from "../pages/Dashboard/AdminDashboard/AdminHome/AdminHome";
+import Statements from "../pages/Dashboard/AdminDashboard/Statements/Statements";
+import MemberRequest from "../pages/Dashboard/AdminDashboard/MemberRequest/MemberRequest";
+import AllMembers from "../pages/Dashboard/AdminDashboard/AllMembers/AllMembers";
 
 
 const router = createBrowserRouter([
@@ -26,6 +31,25 @@ const router = createBrowserRouter([
         element: <Dashboard></Dashboard>,
         children: [
             {
+                path: 'adminHome',
+                element: <AdminHome></AdminHome>
+            },
+            {
+                path: 'statements',
+                element: <Statements></Statements>
+            },
+            {
+                path: 'memberRequest',
+                element: <MemberRequest></MemberRequest>
+            },
+            {
+                path: 'allMembers',
+                element: <AllMembers></AllMembers>
+            },
+
+
+
+            {
                 path: 'home',
                 element: <EmployeeHome></EmployeeHome>
             },
@@ -41,6 +65,10 @@ const router = createBrowserRouter([
                 path: 'soldProduct',
                 element: <SoldProduct></SoldProduct>
             },
+            {
+                path: 'soldList',
+                element: <SoldList></SoldList>
+            }
         ]
     }
 ]);
